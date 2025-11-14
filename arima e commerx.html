@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOP EASY – Grey Theme</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background-color: #c00909f6;  /* Grey background */
+      color: #fff716;
+    }
+
+    header {
+      background-color: #f0e8e8;
+      color: rgb(10, 9, 9);
+      padding: 18px;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: rgb(18, 15, 15);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #110f0f;
+    }
+
+    section {
+      padding: 25px;
+    }
+
+    h2 {
+      color: #222;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    input, textarea, select {
+      width: 300px;
+      padding: 10px;
+      margin: 6px 0;
+      border: 1px solid #999;
+      border-radius: 5px;
+      background-color: #fafafa;
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    button, input[type="submit"] {
+      background-color: #d8cc22;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    button:hover, input[type="submit"]:hover {
+      background-color: #222;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th, td {
+      border: 1px solid #e3d425;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #100f0f;
+      color: white;
+    }
+
+    footer {
+      background-color: #f0e62c;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      margin-top: 20px;
+      font-weight: 300;
+    }
+
+    .form-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 350px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.15);
+      border: 1px solid #ccc;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid #bbb;
+      border-radius: 10px;
+      width: 250px;
+      padding: 15px;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .light-section {
+      background-color: #d3d3d3;
+      border-radius: 5px;
+      padding: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>E-SHOP FLASH</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <section id="home" class="light-section">
+    <h2>Welcome to E-SHOP FLASH!</h2>
+    <p>Browse products in a clean grey-themed interface with modern fonts.</p>
+  </section>
+
+  <section id="register" class="flex">
+    <div class="form-box">
+      <h2>User Registration</h2>
+      <form>
+        <label>Full Name:</label><br>
+        <input type="text" required><br>
+        <label>Email:</label><br>
+        <input type="email" required><br>
+        <label>Password:</label><br>
+        <input type="password" minlength="6" required><br>
+        <label>Confirm Password:</label><br>
+        <input type="password" required><br><br>
+        <input type="submit" value="Register">
+      </form>
+    </div>
+
+    <div class="form-box">
+      <h2>Login</h2>
+      <form>
+        <label>Email:</label><br>
+        <input type="email" required><br>
+        <label>Password:</label><br>
+        <input type="password" required><br><br>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+    <div class="flex">
+      <div class="product-card">
+        <img src="https://www.stuff.tv/wp-content/uploads/sites/2/2024/09/Apple-iPhone-16-models-compared-lead.jpg?resize=820">
+        <h3>Smartphone</h3>
+        <p>$499</p>
+        <button>Add to Cart</button>
+        <button>Order Now!</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://cdn.pixabay.com/photo/2019/08/27/13/35/headphones-4434215_1280.jpg">
+        <h3>Headphones</h3>
+        <p>$39</p>
+        <button>Add to Cartt</button>
+        <button>Order Now!</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://img.freepik.com/premium-photo/picture-laptop_931878-306550.jpg">
+        <h3>Laptop</h3>
+        <p>$999</p>
+        <button>Add to Cart</button>
+        <button>Order Now!</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="wishlist" class="light-section">
+    <h2>Your Wishlist</h2>
+    <ul>
+      <li>Smartphone</li>
+      <li>Headphones</li>
+    </ul>
+  </section>
+
+  <section id="orders">
+    <h2>Your Orders</h2>
+    <table>
+      <tr>
+        <th>Order ID</th>
+        <th>Item</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>#101</td>
+        <td>Laptop</td>
+        <td>Delivered</td>
+      </tr>
+      <tr>
+        <td>#102</td>
+        <td>Headphones</td>
+        <td>In Transit</td>
+      </tr>
+      <tr>
+        <td>#103</td><td>smartphones</td>
+        <td>In progress</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="reviews" class="light-section">
+    <h2>Comments & Reviews</h2>
+    <form>
+      <label>Your Name:</label><br>
+      <input type="text" required><br>
+      <label>Comment:</label><br>
+      <textarea rows="4" required></textarea><br><br>
+      <input type="submit" value="Post Review">
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Customer Care</h2>
+    <form>
+      <label>Name:</label><br>
+      <input type="text" required><br>
+      <label>Email:</label><br>
+      <input type="email" required><br>
+      <label>Issue:</label><br>
+      <select>
+        <option>Order Issue</option>
+        <option>Payment Issue</option>
+        <option>Product Issue</option>
+      </select><br><br>
+      <label>Message:</label><br>
+      <textarea rows="4" required></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section id="about" class="light-section">
+    <h2>About Us</h2>
+    <p>E-SHOP FLASH OFFERS FASTEST SHOPPING EXPERIANCE </p>
+  </section>
+e
+  <footer>
+    <p>&copy; 2025 E-SHOP FLASH|ALL RIGHTS ARE RESERVED.</p>
+  </footer>
+
+</body>
+</html>
